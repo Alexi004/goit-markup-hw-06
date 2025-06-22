@@ -40,7 +40,7 @@ img {
   margin: 0 auto;
 }
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
     padding: 0 16px;
@@ -52,7 +52,7 @@ img {
     max-width: 1158px;
     padding: 0 15px;
   }
-}
+} */
 
 .logo {
   font-weight: 700;
@@ -248,16 +248,22 @@ img {
 
 .team {
   background-color: #f4f4fd;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  /*  padding-top: 120px;
+  padding-bottom: 120px; */
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .team-info {
   padding: 32px 0;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 .team-item {
-  width: calc((100% - 72px) / 4);
+  /*  width: calc((100% - 72px) / 4); */
+  display: flex;
+  flex-direction: column;
   border-radius: 0px 0px 4px 4px;
   background-color: #fff;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
@@ -266,7 +272,9 @@ img {
 
 .team-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 72px;
 }
 
 .team-title {
@@ -297,12 +305,15 @@ img {
   text-align: center;
   color: #434455;
   margin-bottom: 8px;
+  font-weight: 400;
 }
 
 .team-icons {
   display: flex;
   justify-content: center;
   gap: 24px;
+  align-items: center;
+  flex-direction: row;
 }
 
 .team-icon-link {
@@ -770,6 +781,10 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 16px;
+  }
   .about-us-list {
     gap: 72px 24px;
     flex-direction: row;
@@ -787,6 +802,10 @@ img {
 }
 
 @media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding: 0 15px;
+  }
   .about-us {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -822,5 +841,40 @@ img {
 
   .about-us-item-text {
     font-weight: 400;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 0 108px;
+  }
+
+  .team-list {
+    gap: 64px 24px;
+    flex-wrap: wrap;
+  }
+
+  .team-item {
+    width: calc((100% - 24px) / 2);
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .team {
+    background-color: #f4f4fd;
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .team-list {
+    gap: 24px;
+  }
+
+  .team-item {
+    width: calc((100% - 72px) / 4);
   }
 }
