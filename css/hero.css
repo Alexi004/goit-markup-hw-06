@@ -1,6 +1,7 @@
 .hero {
   padding: 72px 0;
-
+  max-width: 1440px;
+  margin: 0 auto;
   background-color: #2e2f42;
   background-image:
     linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
@@ -8,7 +9,6 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  margin: 0 auto;
 }
 @media only screen and (min-width: 768px) {
   .hero {
@@ -45,7 +45,6 @@
   .main-title {
     max-width: 496px;
     margin-bottom: 36px;
-    margin-bottom: 48px;
     font-size: 56px;
     line-height: 1.07;
   }
