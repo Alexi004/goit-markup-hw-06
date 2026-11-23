@@ -136,12 +136,10 @@
 .footer-btn-icon {
   color: #fff;
 }
-
 .footer-btn.btn:hover,
 .footer-btn.btn:focus {
   background-color: #31d0aa;
 }
-
 .footer-form-input::placeholder {
   color: #fff;
 }
