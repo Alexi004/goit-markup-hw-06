@@ -137,8 +137,8 @@
   color: #fff;
 }
 
-.footer-btn.hero-btn:hover,
-.footer-btn.hero-btn:focus {
+.footer-btn.btn:hover,
+.footer-btn.btn:focus {
   background-color: #31d0aa;
 }
 
